@@ -44,12 +44,14 @@ export const clearGallery = () => {
 
 export const showLoader = () => {
   const loader = document.querySelector('.loader');
+  loader.classList.remove('hidden');
   loader.classList.add('visible');
 };
 
 export const hideLoader = () => {
   const loader = document.querySelector('.loader');
   loader.classList.remove('visible');
+  loader.classList.add('hidden');
 };
 
 export const initLightbox = () => {
